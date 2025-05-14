@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*Removing the default padding and margin.*/
+
+:root{
+ --index: calc(1vw + 1vh);
+ --gap: calc(var(--index) * 7);
+ --colour-header: #f4efec;
+ --colour-text: #cdc6c3;
+}
+/* Connecting two types of fonts*/
+@font-face {
+    font-family: raleway-c;
+    src: url(../fonts/raleway-regular.woff2); /* Connecting Font from File "fonts"*/
+}
+@font-face {
+    font-family: outfit-c;
+    src: url(../fonts/outfit-regular.woff2);
+}
+/* Setting Font Family for headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: outfit-c;
+}
+
+/*Will Change to avoid the lag*/
+.content,  .Hero_Section, .main-header, .Art > * {
+    will-change: transform;
+} 
+body{
+    background-image: url(../Images/bg.jpg); /* Adding background image instead of making background solid*/
+    background-size: 50px; /* Makes Background image size smaller*/
+    color: #fafafa; /* Setting Colour of the text*/
+    font-family: raleway-c;
+    overflow-x: hidden;
+}
+
+/*Setting parameters for the Hero Image*/
+.Hero {
+    width: calc( var(--index) * 100);
+    position:absolute;
+    left: -5vw;
+    top: -20vh;
+    z-index: -1;
+}
+.main-header {
+    height: 100vh;
+}
+.container {
+    padding: 0 7vw;
+}
+
+.Hero_Title {
+    font-size: calc(var(--index) * 7);
+    position: absolute;
+    width: min-content; /* Helps to automatically put words on the next Pragraph*/
+    bottom: 12vh;
+    line-height: .9;
+}
+
+.Art {
+    display: flex;
+    padding: calc(var(--index) * 8) 0;
+}
+
+/*Gives common design to the other classes inside class "Art"*/
+.Art > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Art__item {
+    max-width: calc(var(--index) * 23);
+    margin-bottom: var(--gap);
+    max-height: 180vh;
+    border-radius: 12px;
+}
+
+.Art__Left {
+    margin-top: calc(var(--gap) * 1.75);
+}
+
+.Art_Right .Art__item {
+    margin: 0;
+    margin-top: var(--gap);
+}
+
+.text-block {
+    color: var(--colour-text);
+    position: relative;
+}
+
+.text-block__header {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--colour-header);
+    margin-bottom: 1.5rem;
+}
+
+.text-block__paragraph {
+    line-height: 1.75rem;
+}
+
+.hover-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-item img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .hover-text-block {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: var(--colour-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .hover-item:hover .hover-text-block {
+    opacity: 1;
+  }
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paint Portfolio</title>
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+
+    <!-- Connecting Style Sheet and JavaScript Files.-->
+    <link rel="stylesheet" href="/css/style.css"> 
+    <script src="/script/script.js" defer></script>
+
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div class="content">
+            <header class="Hero_Section">
+                <img data-speed='.6' class="Hero" src="/Images/FinalHero.png" alt="Image of Hero">
+        
+                <div class="container"> <!-- Container for the Introduction text. -->
+                    <div  data-speed=".75" class="main-header">
+                        <h1 class="Hero_Title">expressive visuals</h1>
+                    </div>
+                </div>
+            </header>
+
+                <div class="Portfolio">
+                    <div class="container">
+                        <main class="Art">
+                        <div data-speed=".9" class="Art__Left">
+                        
+                            <img class="Art__item" src="/Images/About me.png" alt="My Picture">
+
+                            <div class="Art__item hover-item">
+                                <img src="/Images/Design ohne Titel.png" alt="My Picture">
+                                <div class="hover-text-block">
+                                  <h2 class="text-block__header">Photoshop</h2>
+                                  <p class="text-block__paragraph">Photo manipulation and retouching.</p>
+                                </div>
+                              </div>
+        
+                            <div class="text-block Art__item"></div>
+                            <h2 class="text-block__header">Bringing Structure to Ideas, and Ideas to Life.</h2>
+                            <p class="text-block__paragraph">Welcome to my web portfolio! I’m Elizabet Maznychenko, a talented creative painter with a diverse skill set. I proudly offer a wide range of services, from stunning paintings to captivating photography. Explore my work and see the unique creations I have to offer!</p>
+                          </div>
+                        <div data-speed="1.1" class="Art_Right">
+                            <div class="text-block Art__item"></div>
+                            <h2 class="text-block__header">Bringing Structure to Ideas, and Ideas to Life.</h2>
+                            <p class="text-block__paragraph">Welcome to my web portfolio! I’m Elizabet Maznychenko, a talented creative painter with a diverse skill set. I proudly offer a wide range of services, from stunning paintings to captivating photography. Explore my work and see the unique creations I have to offer!</p>
+        
+                            <div class="Art__item hover-item"> 
+                                <img src="/Images/Photography.png" alt="My Picture">
+                                <div class="hover-text-block">
+                                  <h2 class="text-block__header">Photography</h2>
+                                  <p class="text-block__paragraph">A glimpse into captured moments.</p>
+                                </div>
+                              </div>
+            
+                              <a href="/Paintings/paintings.html">
+                                <div class="Art__item hover-item">
+                                  <img src="/Images/The Chaos.png" alt="My Picture">
+                                  <div class="hover-text-block">
+                                    <h2 class="text-block__header">Paintings</h2>
+                                    <p class="text-block__paragraph">Brushstrokes that whisper stories.</p>
+                                  </div>
+                                </div>
+                              </a>                              
+                        </div>
+                        </main>
+                    </div>
+                </div>    
+        </div>
+    </div>
+</body>
+</html>

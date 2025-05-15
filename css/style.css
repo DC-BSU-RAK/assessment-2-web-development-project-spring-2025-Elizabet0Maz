@@ -100,7 +100,7 @@ body{
 .text-block {
     color: var(--colour-text);
     position: relative;
-    padding: 3rem;
+    margin: 20px;
 }
 
 .text-block__header {

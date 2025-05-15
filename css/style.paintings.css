@@ -99,6 +99,14 @@ body{
     border-radius: 100px;
 }
 
+.Art__image--about {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
 .text-block {
     color: var(--colour-text);
     position: relative;

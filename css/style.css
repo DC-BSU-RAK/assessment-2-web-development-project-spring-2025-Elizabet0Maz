@@ -106,6 +106,7 @@ body{
     font-size: 2rem;
     line-height: 2.4rem;
     color: var(--colour-header);
+    margin-bottom: 1.5rem;
 }
 
 .text-block__paragraph {

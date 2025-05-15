@@ -4,6 +4,7 @@
     box-sizing: border-box;
 } /*Removing the default padding and margin.*/
 
+/* Creates Variables*/
 :root{
  --index: calc(1vw + 1vh);
  --gap: calc(var(--index) * 7);
@@ -28,40 +29,45 @@ h1, h2, h3, h4, h5, h6 {
 .content,  .Hero_Section, .main-header, .Art > * {
     will-change: transform;
 } 
+
+/*Styles the body*/
 body{
     background-image: url(../Images/bg.jpg); /* Adding background image instead of making background solid*/
     background-size: 50px; /* Makes Background image size smaller*/
     color: #fafafa; /* Setting Colour of the text*/
-    font-family: raleway-c;
-    overflow-x: hidden;
+    font-family: raleway-c; /*connects font*/
+    overflow-x: hidden; /*hides horizontal overflow*/
 }
 
 /*Setting parameters for the Hero Image*/
 .Hero {
-    width: calc( var(--index) * 100);
+    width: calc( var(--index) * 100); /*Calculates width using variable in order to keep aspect ratio*/
     position:absolute;
     left: -5vw;
     top: -20vh;
     z-index: -1;
 }
+/*Styles Main header*/
 .main-header {
     height: 100vh;
 }
+/* Setsthe padding inside the containter*/
 .container {
     padding: 0 7vw;
 }
-
+/*Styles the title of the page*/
 .Hero_Title {
-    font-size: calc(var(--index) * 7);
+    font-size: calc(var(--index) * 7); /*Calculates font size using variable in order to keep aspect ratio*/
     position: absolute;
     width: min-content; /* Helps to automatically put words on the next Pragraph*/
     bottom: 12vh;
     line-height: .9;
 }
 
+/*Styles Art which contains two other classes such as Art__Left and Art__Right*/
 .Art {
     display: flex;
-    padding: calc(var(--index) * 8) 0;
+    padding: calc(var(--index) * 8) 0; /*Calculates padding using variable in order to keep aspect ratio*/
 }
 
 /*Gives common design to the other classes inside class "Art"*/
@@ -72,20 +78,23 @@ body{
     flex-direction: column;
 }
 
+/*Styles the items inside the Art*/
 .Art__item {
-    max-width: calc(var(--index) * 23);
-    margin-bottom: var(--gap);
+    max-width: calc(var(--index) * 23); /*Calculates max width of the image using variable in order to keep aspect ratio*/
+    margin-bottom: var(--gap); /* uses a variable in order to keep aspect ratio and add a number*/
     max-height: 180vh;
     border-radius: 12px;
 }
 
+/*Styles Art__Left*/
 .Art__Left {
-    margin-top: calc(var(--gap) * 1.75);
+    margin-top: calc(var(--gap) * 1.75); /*Calculates margin-top using variable in order to keep aspect ratio*/
 }
 
-.Art_Right .Art__item {
+/*Styles Art_Right*/
+.Art__Right .Art__item {
     margin: 0;
-    margin-top: var(--gap);
+    margin-top: var(--gap); /*Calculates margin-top using variable in order to keep aspect ratio*/
 }
 
 .text-block {

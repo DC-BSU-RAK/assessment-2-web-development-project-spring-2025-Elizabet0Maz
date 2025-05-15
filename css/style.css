@@ -112,6 +112,9 @@ body{
 .text-block__paragraph {
     line-height: 1.75rem;
 }
+.image__paragraph {
+    line-height: 1.75rem;
+}
 
 .hover-item {
     position: relative;

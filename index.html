@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Paint Portfolio</title>
-
+      <!--Connecting GSAP Libraries as well adding differ to avoid errors.-->
     <script src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/libs/gsap/gsap.min.js" defer></script>
     <script src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/libs/gsap/ScrollTrigger.min.js" defer></script>
@@ -17,53 +17,70 @@
 </head>
 
 <body>
-    
+    <!--Class wrapper and conten  which contains whole code inside it is made in order to show script that it shall work only with whatever is inside them-->
     <div class="wrapper">
         <div class="content">
-            <header class="Hero_Section">
+            <header class="Hero_Section"> <!--header with class Hero_Section made to design elements in the start of the page-->
+              <!--Header image with class Hero that includes data-speed tool to add animation-->
                 <img data-speed='.6' class="Hero" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/FinalHero.png" alt="Image of Hero">
         
                 <div class="container"> <!-- Container for the Introduction text. -->
-                    <div  data-speed=".75" class="main-header">
-                        <h1 class="Hero_Title">expressive visuals</h1>
+                    <div  data-speed=".75" class="main-header">  <!--main header which includes the data-speed to add animation effect-->
+                        <h1 class="Hero_Title">expressive visuals</h1> <!--Title of the page-->
                     </div>
                 </div>
             </header>
 
-                <div class="Portfolio">
-                    <div class="container">
-                        <main class="Art">
-                        <div data-speed=".9" class="Art__Left">
+                    <div class="container"> <!--Container contains all the content of the portfolio-->
+                        <main class="Art"> <!--Class Art that contains Art__Left and Art__Right along with Art__item-->
+                        <div data-speed=".9" class="Art__Left">  <!--Art__Left is the left Column that has specific speed on which items shall move-->
                         
+                          <!--image with class Art__item image is taken from a file images includes alt attribute-->
                             <img class="Art__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/About me.png" alt="My Picture">
 
                             <div class="Art__item hover-item">
+                              <!--image with class Art__item image is taken from a file images includes alt attribute-->
+                                <img class="Art__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/About me.png" alt="My Picture">
+                                <div class="hover-text-block">
+                                  <h2 class="text-block__header">Photoshop</h2>
+                                  <p class="text-block__paragraph">Photo manipulation and retouching.</p>
+                                </div>
+                              </div>
+
+                            <div class="Art__item hover-item">
+                              <!--image with class Art__item image is taken from a file images includes alt attribute-->
                                 <img src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/Design ohne Titel.png" alt="My Picture">
                                 <div class="hover-text-block">
                                   <h2 class="text-block__header">Photoshop</h2>
                                   <p class="text-block__paragraph">Photo manipulation and retouching.</p>
                                 </div>
                               </div>
-        
-                            <div class="text-block Art__item"></div>
+
+                            <div class="text-block Art__item">
                             <h2 class="text-block__header">Bringing Structure to Ideas, and Ideas to Life.</h2>
                             <p class="text-block__paragraph">Welcome to my web portfolio! I’m Elizabet Maznychenko, a talented creative painter with a diverse skill set. I proudly offer a wide range of services, from stunning paintings to captivating photography. Explore my work and see the unique creations I have to offer!</p>
                           </div>
+
                         <div data-speed="1.1" class="Art_Right">
-                            <div class="text-block Art__item"></div>
+                            <div class="text-block Art__item">
                             <h2 class="text-block__header">Bringing Structure to Ideas, and Ideas to Life.</h2>
                             <p class="text-block__paragraph">Welcome to my web portfolio! I’m Elizabet Maznychenko, a talented creative painter with a diverse skill set. I proudly offer a wide range of services, from stunning paintings to captivating photography. Explore my work and see the unique creations I have to offer!</p>
-        
+                            
+                            <a href="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Paintings/paintings.html">
                             <div class="Art__item hover-item"> 
+                              <!--image with class Art__item image is taken from a file images includes alt attribute-->
                                 <img src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/Photography.png" alt="My Picture">
                                 <div class="hover-text-block">
                                   <h2 class="text-block__header">Photography</h2>
                                   <p class="text-block__paragraph">A glimpse into captured moments.</p>
                                 </div>
                               </div>
+                              </div>
+                              </a>
             
                               <a href="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Paintings/paintings.html">
                                 <div class="Art__item hover-item">
+                                  <!--image with class Art__item image is taken from a file images includes alt attribute-->
                                   <img src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/The Chaos.png" alt="My Picture">
                                   <div class="hover-text-block">
                                     <h2 class="text-block__header">Paintings</h2>
@@ -76,6 +93,5 @@
                     </div>
                 </div>    
         </div>
-    </div>
 </body>
 </html>

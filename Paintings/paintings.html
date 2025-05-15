@@ -5,52 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
-
+    <title>Paintings</title>
+    <!--Connecting GSAP Libraries as well adding differ to avoid errors.-->
     <script src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/libs/gsap/gsap.min.js" defer></script>
     <script src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/libs/gsap/ScrollTrigger.min.js" defer></script>
-
+    <!--Connecting Stylesheet and script-->
     <link rel="stylesheet" href="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/css/style.paintings.css">
     <script src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/script/script.paintings.js" defer ></script>
 </head>
 <body>
+    <!--Class wrapper and conten  which contains whole code inside it is made in order to show script that it shall work only with whatever is inside them-->
     <div class="wrapper">
         <div class="content">
-            <header class="dragon_section">
+            <header class="dragon_section"> <!--header with class dragon made to design elements in the start of the page-->
+                <!--Header image with class dragon that includes data-speed tool to add animation-->
                 <img data-speed=".5" class="dragon" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/dragon_inverted_white_lines.png" alt="Dragon Sketch">
-                <div class="container">
-                    <div data-speed=".75" class="main-header">
-                        <h1 class="title">Paintings</h1>
+                
+                <div class="container"> <!--container class for the introdcution text-->
+                    <div data-speed=".75" class="main-header"> <!--main header which includes the data-speed to add animation effect-->
+                        <h1 class="title">Paintings</h1> <!--Title of the page-->
                     </div>
                 </div>
             </header>
         
-            <div data-speed="1.1" class="paintings">
+            <div data-speed="1.1" class="paintings"> <!--Class paintings which will include all the paintings as well has animation-->
                 <div class="container">
                     <main class="gallery">
-                        <div class="text-block">
-                            <h2 class="text-block__header">The Ocean</h2>
-                            <p class="text-block__paragraph">Golden hours frozen in time, where every ray tells a story.</p>
+                        <div class="text-block"> <!-- class Text block that allows to design the text-->
+                            <h2 class="text-block__header">The Ocean</h2> <!--Header with class "text-block__header"-->
+                            <p class="text-block__paragraph">Golden hours frozen in time, where every ray tells a story.</p>  <!--Paragraph with a class "text-block__paragraph"-->
                             </div>
+                            <!--img tag with class "painting__item" has images that are taken from file images-->
                         <img class="painting__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/20240908_000959.jpg" alt="Ocean 1">
                         <img class="painting__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/20240908_041436.jpg" alt="Ocean 2">
-                        <div class="glow-line"></div>
-                        <div class="text-block">
-                            <h2 class="text-block__header">The Fantasy</h2>
+                        <div class="glow-line"></div> <!--Responsible for adding a thin glowing line-->
+                        <div class="text-block"> <!-- class Text block that allows to design the text-->
+                            <h2 class="text-block__header">The Fantasy</h2> <!--Header with class "text-block__header"-->
                             <p class="text-block__paragraph">Each painting reveals a world only I can see<br>
-                                but you’re invited in.</p>
+                                but you’re invited in.</p> <!--Paragraph with a class "text-block__paragraph"  also includes paragraph break-->
                             </div>
+                            <!--img tag with class "painting__item" has images that are taken from file images-->
                         <img class="painting__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/20230722_000703.jpg" alt="Colourful Sunset">
                         <img class="painting__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/20220622_211818.jpg" alt="The Chaos">
-                        <div class="glow-line"></div>
-                        <div class="text-block">
-                            <h2 class="text-block__header">The Moonlight</h2>
-                            <p class="text-block__paragraph">The moon glows in silence, and we rarely stop to see it.</p>
+                        <div class="glow-line"></div> <!--Responsible for adding a thin glowing line-->
+                        <div class="text-block"> <!-- class Text block that allows to design the text-->
+                            <h2 class="text-block__header">The Moonlight</h2> <!--Header with class "text-block__header"-->
+                            <p class="text-block__paragraph">The moon glows in silence, and we rarely stop to see it.</p> <!--Paragraph with a class "text-block__paragraph"-->
                             </div>
+                            <!--img tag with class "painting__item" has images that are taken from file images-->
                         <img class="painting__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/20220515_193106.jpg" alt="The Tree">
                         <img class="painting__item" src="/assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/Screenshot_20221121_010433.jpg" alt="The Moon">
-                        <div class="glow-line"></div>
+                        <div class="glow-line"></div> <!--Responsible for adding a thin glowing line-->
+                        <!--Button back home to return to the main page with the class "back-home"-->
                         <a href="https://dc-bsu-rak.github.io/assessment-2-web-development-project-spring-2025-Elizabet0Maz/index.html" class="back-home">Back to Home</a>
                     </main>
                 </div>

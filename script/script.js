@@ -36,4 +36,20 @@ if(ScrollTrigger.isTouch !== 1) {
             }
         })
     })
+
+        // Creates fading out items
+        let itemsR = gsap.utils.toArray('.Art_Right .Art__item')
+
+        // Cycle that triggers items to fade out and in one by each rather than all together
+        itemsR.forEach( item => {
+            gsap.fromTo(item, { x: 80, opacity: 0 }, {
+                opacity: 1, x: 0,
+                scrollTrigger: {
+                    trigger: item,
+                    start: '800',
+                    end: '100',
+                    scrub: true
+                }
+            })
+        })
 }

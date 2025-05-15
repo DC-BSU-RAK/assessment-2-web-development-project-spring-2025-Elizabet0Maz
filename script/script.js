@@ -42,12 +42,12 @@ if(ScrollTrigger.isTouch !== 1) {
 
         // Cycle that triggers items to fade out and in one by each rather than all together
         itemsR.forEach( item => {
-            gsap.fromTo(item, { x: 80, opacity: 0 }, {
+            gsap.fromTo(item, { x: 100, opacity: 0 }, {
                 opacity: 1, x: 0,
                 scrollTrigger: {
                     trigger: item,
-                    start: '800',
-                    end: '100',
+                    start: '1000',
+                    end: '400',
                     scrub: true
                 }
             })

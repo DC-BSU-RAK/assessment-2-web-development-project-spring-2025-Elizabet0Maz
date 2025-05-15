@@ -92,9 +92,9 @@ body{
 }
 
 /*Styles Art_Right*/
-.art__right .Art__item {
+.Art_Right .Art__item {
     margin: 0;
-    margin-top: var(--gap); /*Calculates margin-top using variable in order to keep aspect ratio*/
+    margin-top: var(--gap);
 }
 
 .text-block {
@@ -110,9 +110,6 @@ body{
 }
 
 .text-block__paragraph {
-    line-height: 1.75rem;
-}
-.image__paragraph {
     line-height: 1.75rem;
 }
 

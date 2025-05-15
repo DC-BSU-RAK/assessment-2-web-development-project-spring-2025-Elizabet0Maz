@@ -111,6 +111,7 @@ body{
 
 .text-block__paragraph {
     line-height: 1.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .hover-item {

@@ -15,11 +15,11 @@
 /* Connecting two types of fonts. */
 @font-face {
     font-family: raleway-c;
-    src: url(../fonts/raleway-regular.woff2); /* Connecting Font from File "fonts". */
+    src: url(../assessment-2-web-development-project-spring-2025-Elizabet0Maz/fonts/raleway-regular.woff2); /* Connecting Font from File "fonts". */
 }
 @font-face {
     font-family: outfit-c;
-    src: url(../fonts/outfit-regular.woff2);
+    src: url(../assessment-2-web-development-project-spring-2025-Elizabet0Maz/fonts/outfit-regular.woff2);
 }
 /* Setting Font Family for headers. */
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +32,7 @@ will-change: transform;
 
 /* Setting style of the body. */
 body{
-    background-image: url(../Images/bg.jpg); /* Adding background image instead of making background solid*/
+    background-image: url(../assessment-2-web-development-project-spring-2025-Elizabet0Maz/Images/bg.jpg); /* Adding background image instead of making background solid*/
     background-size: 50px; /* Makes Background image size smaller*/
     color: #fafafa; /* Setting Colour of the text*/
     font-family: raleway-c;

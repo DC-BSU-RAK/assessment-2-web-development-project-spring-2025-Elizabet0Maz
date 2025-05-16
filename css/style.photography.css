@@ -58,7 +58,7 @@ body{
 
 /* Setting Parameters for the title of the page. */
 .title {
-    font-size: calc(var(--index)); /* Calculating by means of multipilcation and using variable index for that. */
+    font-size: calc(var(--index) * 6); /* Calculating by means of multipilcation and using variable index for that. */
     position: absolute;
     right: 5vw;
     bottom: 10vh;

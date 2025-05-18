@@ -120,28 +120,28 @@ body{
     border: none;
     border-radius: 100px;
 }
-
-
-
-
+/*styles class text-block*/
 .text-block {
-    color: var(--colour-text);
+    color: var(--colour-text); /*uses variables to determine colour of the text*/
     position: relative;
 }
 
+/*styles the header*/
 .text-block__header {
     font-size: 3rem;
     line-height: 2.4rem;
-    color: var(--colour-header);
+    color: var(--colour-header); /*uses variables to determine colour of the header*/
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
+/*styles the paragraph*/
 .text-block__paragraph {
     line-height: 1.75rem;
     font-size: 1.5rem;
 }
 
+/*styles the link to act like a button*/
 .back-home {
     position: fixed;
     bottom: 3vh;
@@ -159,20 +159,23 @@ body{
     transition: all 0.3s ease;
 }
 
+/*the button changes style when hovered over*/
 .back-home:hover {
     background-color: #fff;
     color: #000;
     box-shadow: 0 0 20px #fff;
 }
 
+/*Makes 3 images in horizontal row*/
 .art-row {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: var(--gap);
+  margin-top: var(--gap) /* Uses variable gap to add a gap*/
 }
 
+/*Styles everything in Art__item*/
 .Art__item {
   max-width: 300px;
   text-align: center;
@@ -183,6 +186,7 @@ body{
   position: relative; 
 }
 
+/*Styles the images inside the Art__item*/
 .Art__item img {
   width: 100%;
   height: auto;
@@ -191,11 +195,12 @@ body{
   transition: filter 0.3s ease;
 }
 
+/*Changes the scale once hovered over*/
 .Art__item:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #fff;
 }
-
+/*effects the stule when hovered over in order to make text pop out and centrally aligned*/
 .hover-text-block {
   position: absolute;
   inset: 0;
@@ -212,14 +217,9 @@ body{
   border-radius: 12px;
 }
 
+/*adds filter to the images to make text appear clear*/
 .Art__item:hover img {
   filter: brightness(70%);
 }
-
-.Art__item:hover .hover-text-block {
-  opacity: 1;
-}
-
-
 
   

@@ -142,3 +142,8 @@ body{
     padding: 1rem;
     border-radius: 12px;
   }
+  /*Allows Text to appear*/
+  .hover-item:hover .hover-text-block {
+    opacity: 1;
+  }
+  

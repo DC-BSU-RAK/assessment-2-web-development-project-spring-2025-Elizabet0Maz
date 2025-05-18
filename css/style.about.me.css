@@ -88,8 +88,22 @@ body{
         0 0 30px #ffffff,    /* outer glow with color */
         0 0 40px #ffffff;
     transition: box-shadow 0.3s ease;
-    align-items: center;
 }
+.Image {
+    display: block; /* make sure image behaves as a block element */
+    max-width: calc(var(--index) * 37);
+    max-height: 180vh;
+    margin: var(--gap) auto; /* top/bottom: var(--gap), left/right: auto */
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #ffffff,
+        0 0 40px #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
 .glow-line {
     height: 0.01vh;
     width: 80vw;

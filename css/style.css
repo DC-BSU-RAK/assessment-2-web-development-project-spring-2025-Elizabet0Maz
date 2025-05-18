@@ -96,34 +96,37 @@ body{
     margin: 0;
     margin-top: var(--gap);
 }
-
+/*adds style to the elements inside the text block*/
 .text-block {
     color: var(--colour-text);
     position: relative;
 }
 
+/*adds style specifically to the header inside the text block*/
 .text-block__header {
     font-size: 2rem;
     line-height: 2.4rem;
-    color: var(--colour-header);
+    color: var(--colour-header); /*uses variables to identify the colour for the header*/
     margin-bottom: 1.5rem;
 }
-
+ /*Adds the line height*/
 .text-block__paragraph {
     line-height: 1.75rem;
 }
-
+ /*sets position for the images*/
 .hover-item {
     position: relative;
     overflow: hidden;
   }
   
+  /*styles the image*/
   .hover-item img {
     display: block;
     width: 100%;
     border-radius: 12px;
   }
   
+  /*adds different style when hovered over*/
   .hover-text-block {
     position: absolute;
     inset: 0;
@@ -139,8 +142,3 @@ body{
     padding: 1rem;
     border-radius: 12px;
   }
-  
-  .hover-item:hover .hover-text-block {
-    opacity: 1;
-  }
-  

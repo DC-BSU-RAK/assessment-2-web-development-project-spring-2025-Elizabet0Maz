@@ -66,7 +66,7 @@ body{
     right: 5vw;
     bottom: 10vh;
 }
-
+ /*Styles gallery class*/
 .gallery {
     display: flex;
     align-items: center;
@@ -74,26 +74,29 @@ body{
     padding: calc(var(--index) * 8) 0;
 }
 
+/*Sets parameters for an image and adds soft glowing boarders*/
 .painting__item {
     max-width: calc(var(--index) * 37);
     max-height: 180vh;
     margin-bottom: var(--gap);
     margin-top: var(--gap);
     margin-left: 3vw;
-    border: 5px solid #fff; /* White border */
-    border-radius: 10px; /* Optional: round corners */
+    border: 5px solid #fff;
+    border-radius: 10px;
     box-shadow: 
-        0 0 10px #fff,       /* soft glow */
+        0 0 10px #fff,
         0 0 20px #fff,       
-        0 0 30px #ffffff,    /* outer glow with color */
+        0 0 30px #ffffff,
         0 0 40px #ffffff;
     transition: box-shadow 0.3s ease;
 }
+
+/*Styles Image class in order to keep image in the center with soft glowing boarder*/
 .Image {
-    display: block; /* make sure image behaves as a block element */
+    display: block; /* makes image behave as a block element */
     max-width: calc(var(--index) * 37);
     max-height: 180vh;
-    margin: var(--gap) auto; /* top/bottom: var(--gap), left/right: auto */
+    margin: var(--gap) auto; 
     border: 5px solid #fff;
     border-radius: 10px;
     box-shadow: 
@@ -104,6 +107,7 @@ body{
     transition: box-shadow 0.3s ease;
 }
 
+/*styles class glow-line,  glowing line is added between content*/
 .glow-line {
     height: 0.01vh;
     width: 80vw;
@@ -117,13 +121,8 @@ body{
     border-radius: 100px;
 }
 
-.Art__image--about {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 1rem;
-}
+
+
 
 .text-block {
     color: var(--colour-text);
@@ -181,14 +180,14 @@ body{
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; /* ensure hover text absolute positioning works */
+  position: relative; 
 }
 
 .Art__item img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px; /* keep consistent rounding */
+  border-radius: 12px; 
   transition: filter 0.3s ease;
 }
 

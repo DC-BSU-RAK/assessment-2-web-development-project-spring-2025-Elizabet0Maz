@@ -221,5 +221,11 @@ body{
 .Art__item:hover img {
   filter: brightness(70%);
 }
+/*allows text to appear*/
+.Art__item:hover .hover-text-block {
+  opacity: 1;
+}
+
+
 
   

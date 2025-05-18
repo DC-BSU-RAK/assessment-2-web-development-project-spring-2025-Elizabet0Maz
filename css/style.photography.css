@@ -71,18 +71,20 @@ body{
     padding: calc(var(--index) * 8) 0;
 }
 
+/*sets the style to the images*/
 .painting__item {
-    max-width: calc(var(--index) * 37);
+    max-width: calc(var(--index) * 37); /*calculates the width using variables*/
     max-height: 180vh;
+    /*adds margin by using variable gap*/
     margin-bottom: var(--gap);
     margin-top: var(--gap);
     margin-left: 3vw;
-    border: 5px solid #fff; /* White border */
-    border-radius: 10px; /* Optional: round corners */
+    border: 5px solid #fff; 
+    border-radius: 10px;
     box-shadow: 
-        0 0 10px #fff,       /* soft glow */
+        0 0 10px #fff,   
         0 0 20px #fff,       
-        0 0 30px #ffffff,    /* outer glow with color */
+        0 0 30px #ffffff,   
         0 0 40px #ffffff;
     transition: box-shadow 0.3s ease;
 }

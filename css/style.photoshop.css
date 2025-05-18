@@ -109,6 +109,7 @@ body{
     line-height: 2.4rem;
     color: var(--colour-header); /*uses variables to determine colour of the text*/
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 /*styles the link to act like a button*/

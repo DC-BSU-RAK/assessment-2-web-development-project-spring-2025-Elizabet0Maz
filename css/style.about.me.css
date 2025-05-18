@@ -88,6 +88,7 @@ body{
         0 0 30px #ffffff,    /* outer glow with color */
         0 0 40px #ffffff;
     transition: box-shadow 0.3s ease;
+    align-items: center;
 }
 .glow-line {
     height: 0.01vh;

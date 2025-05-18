@@ -113,6 +113,10 @@ body{
 .text-block__paragraph {
     line-height: 1.75rem;
 }
+.image__paragraph{
+    font-size: 3rem;
+}
+
  /*sets position for the images*/
 .hover-item {
     position: relative;

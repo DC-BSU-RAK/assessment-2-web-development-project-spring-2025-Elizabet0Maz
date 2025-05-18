@@ -101,11 +101,12 @@ body{
     border-radius: 100px;
 }
 
+/*Adds the style to the block with text*/
 .text-block {
     color: var(--colour-text);
     position: relative;
 }
-
+/*styles the header*/
 .text-block__header {
     font-size: 3rem;
     line-height: 2.4rem;
@@ -113,11 +114,13 @@ body{
     margin-bottom: 1.5rem;
 }
 
+/*styles the paragraph*/
 .text-block__paragraph {
     line-height: 1.75rem;
     font-size: 1.5rem;
 }
 
+/*styles the link to act like a button*/
 .back-home {
     position: fixed;
     bottom: 3vh;
@@ -135,6 +138,7 @@ body{
     transition: all 0.3s ease;
 }
 
+/*the button changes style when hovered over*/
 .back-home:hover {
     background-color: #fff;
     color: #000;

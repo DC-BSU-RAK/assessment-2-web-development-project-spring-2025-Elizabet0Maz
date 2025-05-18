@@ -125,7 +125,6 @@ body{
     color: var(--colour-text); /*uses variables to determine colour of the text*/
     position: relative;
 }
-
 /*styles the header*/
 .text-block__header {
     font-size: 3rem;

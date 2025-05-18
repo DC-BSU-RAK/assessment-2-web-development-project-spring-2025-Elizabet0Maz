@@ -166,18 +166,46 @@ body{
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* ensure hover text absolute positioning works */
 }
 
 .Art__item img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 12px; /* keep consistent rounding */
+  transition: filter 0.3s ease;
 }
 
 .Art__item:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #fff;
 }
+
+.hover-text-block {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.Art__item:hover img {
+  filter: brightness(70%);
+}
+
+.Art__item:hover .hover-text-block {
+  opacity: 1;
+}
+
 
 
   
